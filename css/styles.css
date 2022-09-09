@@ -1,0 +1,175 @@
+/* font-family: 'Raleway', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+:root {
+    --black-color: #212121;
+    --blue-color: #2196F3;
+    --white-color: #FFFFFF;
+    --light-grey-color: #F5F4FA;
+    --dark-gray-color: #757575;
+    --dark-gray-bg-color: #2F303A;
+    --light-gray-bg-color: #E5E5E5;
+    --light-white-color: rgba(255, 255, 255, 0.6);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--black-color);
+    background-color: var(--light-gray-bg-color);
+}
+
+footer {
+    background-color: var(--dark-gray-bg-color);
+}
+
+header {
+    background-color: var(--white-color);
+}
+
+.articles-company-values {
+    background-color: var(--white-color);
+}
+
+.articles-company-values>h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.articles-company-values>p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.banner {
+    background-color: var(--dark-gray-bg-color);
+}
+
+.banner>button {
+    background-color: var(--blue-color);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--white-color);
+    line-height: 1.9;
+}
+
+.banner>button:hover {
+    cursor: pointer;
+}
+
+.banner>h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+}
+.catalogue-briefcase>article{
+    background-color: var(--white-color);
+}
+
+.catalogue>h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.catalogue>p {
+    font-size: 16px;
+    color: var(--dark-gray-color);
+    line-height: 1.9;
+}
+
+.link {
+    color: var(--dark-gray-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: var(--blue-color);
+}
+
+.location {
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.location>a {
+    color: var(--light-white-color);
+}
+
+.location>a:hover {
+    color: var(--blue-color);
+}
+
+.logo {
+    color: var(--blue-color);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.menu {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--black-color);
+    line-height: 1.2;
+
+}
+
+.menu:hover {
+    text-decoration: none;
+    color: var(--blue-color);
+}
+
+.our-team {
+    background-color: var(--white-color);
+}
+
+.our-team>h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.our-team>h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.our-team>p {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.portfolio-filter {
+    background: var(--light-grey-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.portfolio-filter:hover {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.services {
+    background-color: var(--white-color);
+}
+
+.social-networks>p {
+    color: var(--white-color);
+    font-size: 14px;
+    line-height: 1.2;
+}
