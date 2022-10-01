@@ -9,6 +9,11 @@
     --dark-gray-bg-color: #2F303A;
     --light-gray-bg-color: #E5E5E5;
     --light-white-color: rgba(255, 255, 255, 0.6);
+    --hr-color: #ECECEC;
+}
+
+* {
+    margin: 0;
 }
 
 a {
@@ -16,7 +21,6 @@ a {
 }
 
 body {
-    margin: 0;
     font-family: 'Roboto', sans-serif;
     color: var(--black-color);
     background-color: var(--light-gray-bg-color);
@@ -26,18 +30,69 @@ footer {
     background-color: var(--dark-gray-bg-color);
 }
 
+h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    color: var(--white-color);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+h5 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
 header {
     background-color: var(--white-color);
+    /* padding: 32px; */
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--hr-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+p {
+    font-size: 16px;
+    color: var(--dark-gray-color);
+    line-height: 1.9;
 }
 
 .articles-company-values {
     background-color: var(--white-color);
-}
-
-.articles-company-values>h3 {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
 }
 
 .articles-company-values>p {
@@ -48,6 +103,7 @@ header {
 
 .banner {
     background-color: var(--dark-gray-bg-color);
+    text-align: center;
 }
 
 .banner>button {
@@ -56,43 +112,75 @@ header {
     font-size: 16px;
     color: var(--white-color);
     line-height: 1.9;
+    margin: 30px;
 }
 
 .banner>button:hover {
     cursor: pointer;
 }
 
-.banner>h1 {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+.catalogue {
+    background: var(--white-color);
+    border-bottom: 1px solid #EEEEEE;
+    flex-basis: calc((100% - 215px) / 3);
+    margin: 30px;
 }
-.catalogue-briefcase>article{
+
+.catalogue-briefcase {
     background-color: var(--white-color);
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    padding: 82px;
 }
 
-.catalogue>h4 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+.catalogue-filter {
+    background: var(--white-color);
+    text-align: center;
+    padding-top: 106px;
+    padding-right: 8px;
 }
 
-.catalogue>p {
-    font-size: 16px;
-    color: var(--dark-gray-color);
-    line-height: 1.9;
+.container {
+    width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 94px;
 }
 
-.link {
+.company-contact {
+    display: flex;
+}
+
+.contact {
     color: var(--dark-gray-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
 }
 
-.link:hover {
+.contact:hover {
     text-decoration: none;
     color: var(--blue-color);
+}
+
+
+.img-team {
+    background-color: var(--white-color);
+}
+
+.img-team>div {
+    margin: 39px;
+}
+
+.img-team,
+.image,
+.feature-company:not(:last-child) {
+    margin-right: 30px;
+}
+
+.features-company {
+    margin-right: 30px;
 }
 
 .location {
@@ -115,40 +203,43 @@ header {
     font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 .menu {
-    font-weight: 500;
-    font-size: 14px;
-    color: var(--black-color);
-    line-height: 1.2;
-
+    margin: 0;
+    list-style: none;
+    background-color: var(--white-color);
 }
 
-.menu:hover {
+.menu>.item,
+.company-contact>.contact:not(:last-child) {
+    margin-right: 50px;
+}
+
+.menu>.item:last-child {
+    margin-right: 344px;
+}
+
+.menu .link {
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.menu .link:hover {
     text-decoration: none;
     color: var(--blue-color);
 }
 
 .our-team {
-    background-color: var(--white-color);
+    text-align: center;
 }
 
-.our-team>h2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-}
-
-.our-team>h4 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-}
-
-.our-team>p {
-    font-size: 16px;
-    line-height: 1.2;
+.page-main {
+    display: flex;
+    align-items: center;
 }
 
 .portfolio-filter {
@@ -168,8 +259,17 @@ header {
     background-color: var(--white-color);
 }
 
+
 .social-networks>p {
     color: var(--white-color);
     font-size: 14px;
     line-height: 1.2;
+}
+
+.title-our-team {
+    margin-bottom: 50px;
+}
+
+.title-services {
+    margin-bottom: 55px;
 }
